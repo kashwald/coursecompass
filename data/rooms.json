@@ -1,0 +1,434 @@
+[
+  {
+    "building": "Biology Building",
+    "room": "AN_HOUSE"
+  },
+  {
+    "building": "Biology Building",
+    "room": "BLDOWN"
+  },
+  {
+    "building": "Biology Building",
+    "room": "BLEXT"
+  },
+  {
+    "building": "Biology Building",
+    "room": "BLUP"
+  },
+  {
+    "building": "Biology Building",
+    "room": "BSR"
+  },
+  {
+    "building": "CIMH Building",
+    "room": "COM_LAB"
+  },
+  {
+    "building": "CIMH Building",
+    "room": "MAIN_CLASS"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR10"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR11"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR6"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR7"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR8"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LR9"
+  },
+  {
+    "building": "CLICO Centre for Teaching Excellence",
+    "room": "LT4"
+  },
+  {
+    "building": "CLR James Cricket Res Centre",
+    "room": "ROOM1"
+  },
+  {
+    "building": "Chemistry Building",
+    "room": "CSR"
+  },
+  {
+    "building": "Chemistry Building",
+    "room": "INORGLAB"
+  },
+  {
+    "building": "Chemistry Building",
+    "room": "ORGLAB"
+  },
+  {
+    "building": "Chemistry Building",
+    "room": "PHYCMLAB"
+  },
+  {
+    "building": "Codrington College",
+    "room": "CLR1"
+  },
+  {
+    "building": "Codrington College",
+    "room": "CLR2"
+  },
+  {
+    "building": "Codrington College",
+    "room": "CLR3"
+  },
+  {
+    "building": "Confucius Institute",
+    "room": "LANG_LAB"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "CINEMA_TH"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "DANC_STUDI"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "MAC LAB"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "PED_CENTRE"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "PERF_STUD"
+  },
+  {
+    "building": "E. Barrow Centre for Creative Imagination",
+    "room": "REH_ROOM"
+  },
+  {
+    "building": "EDF Building",
+    "room": "CSL2"
+  },
+  {
+    "building": "Law Faculty Building",
+    "room": "CONFR"
+  },
+  {
+    "building": "Law Faculty Building",
+    "room": "LECTOFF"
+  },
+  {
+    "building": "Law Faculty Building",
+    "room": "LLT"
+  },
+  {
+    "building": "Law Faculty Building",
+    "room": "ROBINGR"
+  },
+  {
+    "building": "Law Faculty Building",
+    "room": "SEMINAR R"
+  },
+  {
+    "building": "Management Studies",
+    "room": "MSR1"
+  },
+  {
+    "building": "Management Studies",
+    "room": "MSR2"
+  },
+  {
+    "building": "Management Studies",
+    "room": "MSR3"
+  },
+  {
+    "building": "Management Studies",
+    "room": "MSR4"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSLT"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-01"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-02"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-03"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-04"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-05"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-06"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-07"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-08"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-09"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSSR-10"
+  },
+  {
+    "building": "Medical Sciences Faculty Building",
+    "room": "MSTL"
+  },
+  {
+    "building": "Mutual Building",
+    "room": "FF_CLASS"
+  },
+  {
+    "building": "Mutual Building",
+    "room": "GF_CLASS"
+  },
+  {
+    "building": "Mutual Building",
+    "room": "GF_COMPLAB"
+  },
+  {
+    "building": "New Chemistry Building",
+    "room": "NCSR"
+  },
+  {
+    "building": "Physics Building",
+    "room": "CSL1"
+  },
+  {
+    "building": "Physics Building",
+    "room": "ESL"
+  },
+  {
+    "building": "Physics Building",
+    "room": "ICL"
+  },
+  {
+    "building": "Physics Building",
+    "room": "LAB DOWN"
+  },
+  {
+    "building": "Physics Building",
+    "room": "LAB UP"
+  },
+  {
+    "building": "Physics Building",
+    "room": "LAB3"
+  },
+  {
+    "building": "Physics Building",
+    "room": "SLT"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR01"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR02"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR03"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR04"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR05"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR06"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR07"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR08"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR09"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR10"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR11"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GR12"
+  },
+  {
+    "building": "Post-Graduate Building",
+    "room": "GRLT"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LR1"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LR2"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LR3"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LR4"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LT1"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LT2"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "LT3"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "ML4"
+  },
+  {
+    "building": "Roy Marshall Teaching Complex",
+    "room": "ML5"
+  },
+  {
+    "building": "SEED Building",
+    "room": "ECL"
+  },
+  {
+    "building": "SEED Building",
+    "room": "ESCL"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "LR12"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "LR13"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "LR14"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "ML6"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "TSR10"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "TSR11"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "TSR7"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "TSR8"
+  },
+  {
+    "building": "Sagicor Centre for Lifelong Learning",
+    "room": "TSR9"
+  },
+  {
+    "building": "School of Education Building",
+    "room": "SOE SEM"
+  },
+  {
+    "building": "Usain Bolt Sports Complex",
+    "room": "BIOMEC LAB"
+  },
+  {
+    "building": "Usain Bolt Sports Complex",
+    "room": "USB01"
+  },
+  {
+    "building": "Usain Bolt Sports Complex",
+    "room": "USB02"
+  },
+  {
+    "building": "Usain Bolt Sports Complex",
+    "room": "USB03"
+  },
+  {
+    "building": "Usain Bolt Sports Complex",
+    "room": "USBLT"
+  },
+  {
+    "building": "Wendell McClean Building",
+    "room": "S6"
+  },
+  {
+    "building": "Wendell McClean Building",
+    "room": "S7"
+  },
+  {
+    "building": "Wendell McClean Building",
+    "room": "S8"
+  },
+  {
+    "building": "Woodville Marshall Building",
+    "room": "ALT"
+  },
+  {
+    "building": "Woodville Marshall Building",
+    "room": "ASR1"
+  },
+  {
+    "building": "Woodville Marshall Building",
+    "room": "ASR2"
+  },
+  {
+    "building": "Woodville Marshall Building",
+    "room": "LL"
+  }
+]

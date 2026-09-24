@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-09-18T20:03:57+00:00",
+  "timezone": "America/Barbados",
+  "source": "cleaned_rooms.csv",
+  "row_count_in": 1709,
+  "block_count_out": 1649,
+  "rules": {
+    "occupancy": "full_duration",
+    "recurring": "weekly",
+    "overlap": "merge",
+    "free_at_boundary": true
+  }
+}

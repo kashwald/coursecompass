@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Locator · Cave Hill</title>
+  <meta name="description" content="Find any room on the Cave Hill campus in seconds." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">◈</span>
+        Cave&nbsp;Hill&nbsp;Locator
+      </a>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Rooms</a>
+        <a href="map.html">Campus map</a>
+        <a href="availability.html">Availability</a>
+      </nav>
+      <div class="help-wrap">
+        <button class="help-btn" id="help-btn" aria-haspopup="true" aria-expanded="false">
+          Need help?
+        </button>
+        <div class="help-popover" id="help-popover" role="dialog" aria-label="Get help" hidden>
+          <p>Running into an issue with the locator?</p>
+          <p class="help-popover__email">kashaun.waldron@mycavehill.uwi.edu</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO / SEARCH ============ -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Cave Hill Campus</p>
+      <h1 class="hero__title">
+        Which room are<br />you looking for?
+      </h1>
+      <p class="hero__sub">
+        Search any room across campus, or browse by building to see everything inside it.
+      </p>
+
+      <div class="searchbar" id="room-lookup">
+        <svg class="searchbar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <input
+          id="room-search-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Try “CMP101” or “Law Faculty”"
+          aria-label="Search for a room"
+        />
+        <div class="searchbar__results" id="search-results" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUILDINGS ============ -->
+  <section class="buildings" id="buildings">
+    <div class="buildings__header">
+      <h2>Browse by building</h2>
+      <p>Pick a building to see every room inside</p>
+    </div>
+
+    <div class="building-grid" id="building-grid">
+      <!-- building cards injected here -->
+    </div>
+  </section>
+
+  <!-- ============ ROOM PANEL (slides in) ============ -->
+  <div class="panel-scrim" id="panel-scrim" hidden></div>
+  <aside class="room-panel" id="room-panel" aria-hidden="true">
+    <div class="room-panel__head">
+      <div>
+        <p class="room-panel__eyebrow" id="panel-building-name">Building</p>
+        <h3 id="panel-title">Rooms</h3>
+      </div>
+      <button class="room-panel__close" id="panel-close" aria-label="Close room list">✕</button>
+    </div>
+
+    <ul class="room-list" id="room-list">
+      <!-- room rows injected here -->
+    </ul>
+
+    <div class="room-video" id="room-video" hidden>
+      <div class="room-video__frame">
+        <iframe
+          id="room-video-iframe"
+          src=""
+          title="Room walkthrough video"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>Cave Hill Room Locator · built for students, by students.</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

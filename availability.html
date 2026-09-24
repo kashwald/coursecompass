@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Availability · Cave Hill Locator</title>
+  <meta name="description" content="See which rooms are free or occupied right now, at any time, or across the week." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="availability.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">◈</span>
+        Cave&nbsp;Hill&nbsp;Locator
+      </a>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="index.html">Rooms</a>
+        <a href="map.html">Campus map</a>
+        <a href="availability.html" aria-current="page">Availability</a>
+      </nav>
+      <div class="help-wrap">
+        <button class="help-btn" id="help-btn" aria-haspopup="true" aria-expanded="false">
+          Need help?
+        </button>
+        <div class="help-popover" id="help-popover" role="dialog" aria-label="Get help" hidden>
+          <p>Running into an issue with the locator?</p>
+          <p class="help-popover__email">kashaun.waldron@mycavehill.uwi.edu</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ AVAILABILITY HERO / CONTROLS ============ -->
+  <section class="avail-hero">
+    <div class="avail-hero__inner">
+      <p class="hero__eyebrow">Cave Hill Campus</p>
+      <h1 class="avail-hero__title">Who's free right now?</h1>
+      <p class="avail-hero__sub" id="data-freshness">Loading availability data…</p>
+
+      <div class="avail-controls">
+        <div class="avail-controls__row">
+          <label class="avail-field">
+            <span>Day</span>
+            <select id="day-select"></select>
+          </label>
+          <label class="avail-field">
+            <span>Time</span>
+            <input type="time" id="time-select" step="60" />
+          </label>
+          <button class="avail-now-btn" id="now-btn" type="button">Use current time</button>
+        </div>
+        <div class="avail-controls__row">
+          <label class="avail-field avail-field--grow">
+            <span>Building</span>
+            <select id="building-select">
+              <option value="">All buildings</option>
+            </select>
+          </label>
+          <label class="avail-field avail-field--grow">
+            <span>Room</span>
+            <input type="text" id="room-filter" placeholder="e.g. LT1" autocomplete="off" />
+          </label>
+          <label class="avail-field avail-toggle">
+            <input type="checkbox" id="free-only" />
+            <span>Free only</span>
+          </label>
+        </div>
+        <div class="avail-controls__row">
+          <label class="avail-field avail-field--grow course-search">
+            <span>Search by course</span>
+            <input type="text" id="course-search-input" placeholder="e.g. Ecology, or 2460" autocomplete="off" />
+            <div class="course-search-results" id="course-search-results" hidden></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROOM STATUS GRID ============ -->
+  <section class="avail-results">
+    <div class="avail-disclaimer">
+      <span class="avail-disclaimer__icon" aria-hidden="true">ⓘ</span>
+      <p>
+        Availability here is based only on scheduled lectures and tutorials. It doesn't account for
+        student events, meetings, or other ad-hoc bookings, and a room marked "free" may still be
+        unusable due to maintenance or other environmental issues. Always confirm in person if it matters.
+      </p>
+    </div>
+    <div class="avail-results__summary" id="results-summary"></div>
+    <div class="avail-grid" id="room-grid">
+      <p class="avail-loading">Loading rooms…</p>
+    </div>
+  </section>
+
+  <!-- ============ WEEKLY TIMETABLE PANEL ============ -->
+  <div class="panel-scrim" id="tt-scrim" hidden></div>
+  <aside class="room-panel timetable-panel" id="tt-panel" aria-hidden="true">
+    <div class="room-panel__head">
+      <div>
+        <p class="room-panel__eyebrow" id="tt-building-name">Building</p>
+        <h3 id="tt-room-name">Room</h3>
+      </div>
+      <button class="room-panel__close" id="tt-close" aria-label="Close timetable">✕</button>
+    </div>
+
+    <div class="timetable" id="timetable-body">
+      <!-- weekly grid injected here -->
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>Cave Hill Room Locator · built for students, by students.</p>
+  </footer>
+
+  <script src="availability.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
