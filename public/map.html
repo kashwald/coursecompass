@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Map · Cave Hill Locator</title>
+  <meta name="description" content="Interactive map of every building on the Cave Hill campus." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">◈</span>
+        Cave&nbsp;Hill&nbsp;Locator
+      </a>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="index.html">Rooms</a>
+        <a href="map.html" aria-current="page">Campus map</a>
+        <a href="availability.html">Availability</a>
+      </nav>
+      <div class="help-wrap">
+        <button class="help-btn" id="help-btn" aria-haspopup="true" aria-expanded="false">
+          Need help?
+        </button>
+        <div class="help-popover" id="help-popover" role="dialog" aria-label="Get help" hidden>
+          <p>Running into an issue with the locator?</p>
+          <p class="help-popover__email">kashaun.waldron@mycavehill.uwi.edu</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAP ============ -->
+  <div class="map-wrap">
+    <div class="map-search" id="map-search">
+      <svg class="map-search__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <input
+        id="map-search-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Find a building…"
+        aria-label="Search for a building"
+      />
+      <div class="map-search__results" id="map-search-results" hidden></div>
+    </div>
+
+    <div id="campus-map" aria-label="Interactive map of Cave Hill campus buildings"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="site.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+.map-wrap {
+  position: relative;
+}
+
+#campus-map {
+  height: calc(100vh - 65px);
+  width: 100%;
+  background: var(--sand-100);
+}
+
+/* ---- floating building search ---- */
+.map-search {
+  position: absolute;
+  top: 16px;
+  left: 55px;
+  z-index: 500; /* above Leaflet's panes (max ~650) but below controls if needed */
+  width: min(320px, calc(100% - 32px));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 16px;
+  box-shadow: var(--shadow-card);
+}
+.map-search__icon { width: 18px; height: 18px; color: var(--ink-500); flex-shrink: 0; }
+.map-search input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: .92rem;
+  font-family: var(--font-body);
+  color: var(--ink-900);
+}
+.map-search input::placeholder { color: #9aa4b1; }
+
+.map-search__results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: min(320px, 100%);
+  max-height: 320px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.map-search__results button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 16px;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  color: var(--ink-900);
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid var(--sand-100);
+}
+.map-search__results button:last-child { border-bottom: none; }
+.map-search__results button:hover,
+.map-search__results button.is-active { background: var(--sand-100); }
+.map-search__results .building-parts {
+  font-size: .76rem;
+  color: var(--ink-500);
+  white-space: nowrap;
+}
+.map-search__empty {
+  padding: 14px 16px;
+  color: var(--ink-500);
+  font-size: .86rem;
+}
+
+@media (max-width: 620px) {
+  .map-search { top: 12px; left: 12px; right: 12px; width: auto; }
+  .map-search__results { width: 100%; }
+}
+
+/* Leaflet popup restyled to match the site */
+.leaflet-popup-content-wrapper {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+}
+.leaflet-popup-content {
+  font-family: var(--font-body);
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--ink-900);
+  margin: 12px 16px;
+}
+.leaflet-popup-tip { box-shadow: var(--shadow-card); }
+
+.leaflet-container {
+  font-family: var(--font-body);
+}
+
+.leaflet-control-attribution {
+  font-size: .72rem;
+}
+
+.leaflet-control-layers {
+  border-radius: var(--radius-sm) !important;
+  box-shadow: var(--shadow-card) !important;
+  border: none !important;
+  font-family: var(--font-body);
+}
+.leaflet-control-layers-toggle {
+  width: 38px !important;
+  height: 38px !important;
+}
+.leaflet-control-layers-expanded {
+  padding: 10px 14px !important;
+  font-size: .88rem;
+}
+.leaflet-control-layers-selector { accent-color: var(--coral-500); }
+
+@media (max-width: 620px) {
+  #campus-map { height: calc(100vh - 112px); height: calc(100dvh - 112px); }
+}
+/* ---- shuttle route control (second layers control, under the basemap one) ---- */
+.leaflet-control-layers.shuttle-control .leaflet-control-layers-toggle {
+  background-image: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaflet-control-layers.shuttle-control .leaflet-control-layers-toggle::before {
+  content: "🚌";
+  font-size: 18px;
+}
